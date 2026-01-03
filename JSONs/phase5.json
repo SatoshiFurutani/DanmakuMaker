@@ -1,0 +1,44 @@
+{
+  "loopLength": 360,
+
+  "emitters": [
+    {
+      "start": 0,
+      "end": 360,
+      "interval": 60,
+      "count": 4,
+
+      "spawn": {
+        "type": "boss"
+      },
+
+      "pattern": {
+        "type": "circle"
+      },
+
+      "motion": {
+        "type": "straight",
+        "speed": 0.8
+      },
+
+      "style": {
+        "type": "laser",
+        "width": 10,
+        "length": 120,
+        "color": [255, 50, 50]
+      }
+    }
+  ],
+
+  "motions": [
+    {
+      "start": 200,
+      "end": 360,
+      "motion": {
+        "type": "sineMove",
+        "amp": 150,
+        "freq": 0.015
+      }
+    }
+  ]
+}

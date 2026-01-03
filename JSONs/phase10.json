@@ -1,0 +1,124 @@
+{
+  "loopLength": 600,
+
+  "emitters": [
+
+    {
+      "start": 0,
+      "end": 160,
+      "interval": 40,
+      "count": 8,
+
+      "spawn": { "type": "boss" },
+      "pattern": { "type": "circle" },
+      "motion": { "type": "straight", "speed": 1.4 },
+
+      "style": {
+        "type": "circle",
+        "r": 4,
+        "color": [180, 180, 255]
+      }
+    },
+
+    {
+      "start": 160,
+      "end": 300,
+      "interval": 20,
+      "count": 10,
+
+      "spawn": {
+        "type": "arc",
+        "radius": 50,
+        "start": -1.0,
+        "end": 1.0
+      },
+
+      "pattern": {
+        "type": "wave",
+        "base": 0,
+        "amp": 0.5,
+        "freq": 0.05
+      },
+
+      "motion": { "type": "straight", "speed": 2.0 },
+
+      "style": {
+        "type": "rice",
+        "scale": 1.0,
+        "color": [200, 255, 200]
+      }
+    },
+
+    {
+      "start": 340,
+      "end": 540,
+      "interval": 12,
+      "count": 14,
+
+      "spawn": {
+        "type": "circle",
+        "radius": 40
+      },
+
+      "pattern": {
+        "type": "circle"
+      },
+
+      "motion": {
+        "type": "sum",
+        "motions": [
+          { "type": "straight", "speed": 1.6 },
+          { "type": "sine", "amp": 0.6, "freq": 0.08, "speed": 1.0 },
+          {
+            "type": "homing",
+            "start": 30,
+            "end": 120,
+            "speed": 2.2,
+            "rate": 0.04
+          }
+        ]
+      },
+
+      "style": {
+        "type": "rice",
+        "scale": 1.3,
+        "color": [255, 150, 200]
+      }
+    },
+
+    {
+      "start": 540,
+      "end": 600,
+      "interval": 60,
+      "count": 4,
+
+      "spawn": { "type": "boss" },
+
+      "pattern": {
+        "type": "fixed",
+        "angle": 1.5708
+      },
+
+      "motion": { "type": "straight", "speed": 0.8 },
+
+      "style": {
+        "type": "laser",
+        "width": 10,
+        "length": 160,
+        "color": [255, 80, 80]
+      }
+    }
+  ],
+
+  "motions": [
+    {
+      "start": 0,
+      "end": 600,
+      "motion": {
+        "type": "sineMove",
+        "amp": 120,
+        "freq": 0.015
+      }
+    }
+  ]
+}

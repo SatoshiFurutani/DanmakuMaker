@@ -1,0 +1,52 @@
+{
+  "loopLength": 480,
+
+  "emitters": [
+    {
+      "start": 0,
+      "end": 160,
+      "interval": 30,
+      "count": 6,
+      "spawn": { "type": "boss" },
+      "pattern": { "type": "circle" },
+      "motion": { "type": "straight", "speed": 1.5 },
+      "style": {
+        "type": "circle",
+        "r": 4,
+        "color": [180, 180, 180]
+      }
+    },
+
+    {
+      "start": 160,
+      "end": 320,
+      "interval": 20,
+      "count": 10,
+      "spawn": { "type": "boss" },
+      "pattern": { "type": "wave", "base": 0, "amp": 0.6, "freq": 0.05 },
+      "motion": { "type": "straight", "speed": 2.2 },
+      "style": {
+        "type": "rice",
+        "scale": 1.1,
+        "color": [200, 200, 255]
+      }
+    },
+
+    {
+      "start": 320,
+      "end": 480,
+      "interval": 12,
+      "count": 14,
+      "spawn": { "type": "arc", "radius": 60, "start": -1.2, "end": 1.2 },
+      "pattern": { "type": "pyramid" },
+      "motion": { "type": "sine", "amp": 0.7, "freq": 0.06, "speed": 2.6 },
+      "style": {
+        "type": "rice",
+        "scale": 1.3,
+        "color": [255, 150, 150]
+      }
+    }
+  ],
+
+  "motions": []
+}

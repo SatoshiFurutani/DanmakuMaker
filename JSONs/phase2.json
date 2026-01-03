@@ -1,0 +1,45 @@
+{
+  "loopLength": 360,
+
+  "emitters": [
+    {
+      "start": 0,
+      "end": 360,
+      "interval": 20,
+      "count": 16,
+
+      "spawn": {
+        "type": "boss"
+      },
+
+      "pattern": {
+        "type": "circle"
+      },
+
+      "motion": {
+        "type": "sine",
+        "amp": 0.6,
+        "freq": 0.05,
+        "speed": 2.2
+      },
+
+      "style": {
+        "type": "rice",
+        "scale": 1.2,
+        "color": [255, 200, 200]
+      }
+    }
+  ],
+
+  "motions": [
+    {
+      "start": 0,
+      "end": 360,
+      "motion": {
+        "type": "sineMove",
+        "amp": 120,
+        "freq": 0.02
+      }
+    }
+  ]
+}

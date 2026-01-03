@@ -1,0 +1,41 @@
+{
+  "loopLength": 300,
+
+  "emitters": [
+    {
+      "start": 0,
+      "end": 300,
+      "interval": 30,
+      "count": 8,
+
+      "spawn": {
+        "type": "boss"
+      },
+
+      "pattern": {
+        "type": "circle"
+      },
+
+      "motion": {
+        "type": "straight",
+        "speed": 2.5
+      },
+
+      "style": {
+        "type": "circle",
+        "r": 6,
+        "color": [255, 80, 80]
+      }
+    }
+  ],
+
+  "motions": [
+    {
+      "start": 0,
+      "end": 300,
+      "motion": {
+        "type": "hover"
+      }
+    }
+  ]
+}

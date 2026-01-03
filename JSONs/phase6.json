@@ -1,0 +1,39 @@
+{
+  "loopLength": 360,
+
+  "emitters": [
+    {
+      "start": 0,
+      "end": 360,
+      "interval": 30,
+      "count": 6,
+
+      "spawn": { "type": "boss" },
+      "pattern": { "type": "circle" },
+      "motion": { "type": "straight", "speed": 1.8 },
+      "style": {
+        "type": "circle",
+        "r": 5,
+        "color": [180, 180, 255]
+      }
+    },
+
+    {
+      "start": 120,
+      "end": 240,
+      "interval": 12,
+      "count": 10,
+
+      "spawn": { "type": "boss" },
+      "pattern": { "type": "pyramid" },
+      "motion": { "type": "sine", "amp": 0.6, "freq": 0.3, "speed": 4.4 },
+      "style": {
+        "type": "rice",
+        "scale": 1.1,
+        "color": [255, 120, 120]
+      }
+    }
+  ],
+
+  "motions": []
+}

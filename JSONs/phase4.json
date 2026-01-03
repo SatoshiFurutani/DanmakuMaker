@@ -1,0 +1,50 @@
+{
+  "loopLength": 420,
+
+  "emitters": [
+    {
+      "start": 0,
+      "end": 420,
+      "interval": 30,
+      "count": 12,
+
+      "spawn": {
+        "type": "arc",
+        "radius": 60,
+        "start": 0.3,
+        "end": 2.7
+      },
+
+      "pattern": {
+        "type": "wave",
+        "base": 0,
+        "amp": 0.8,
+        "freq": 0.02
+      },
+
+      "motion": {
+        "type": "straight",
+        "speed": 2.8
+      },
+
+      "style": {
+        "type": "rice",
+        "scale": 1.0,
+        "color": [120, 180, 255]
+      }
+    }
+  ],
+
+  "motions": [
+    {
+      "start": 0,
+      "end": 420,
+      "motion": {
+        "type": "moveTo",
+        "x": 100,
+        "y": 120,
+        "speed": 10
+      }
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "loopLength": 100,
+
+  "emitters": [
+    {
+      "start": 30,
+      "end": 100,
+      "interval": 15,
+      "count": 6,
+
+      "spawn": {
+        "type": "circle",
+        "radius": 40
+      },
+
+      "pattern": {
+        "type": "pyramid"
+      },
+
+      "motion": {
+        "type": "sum",
+        "motions": [
+          { "type": "straight", "speed": 0.4 },
+          {
+            "type": "homing",
+            "start": 5,
+            "end": 100,
+            "speed": 3.0,
+            "rate": 0.5
+          }
+        ]
+      },
+
+      "style": {
+        "type": "circle",
+        "r": 7,
+        "color": [255, 120, 0]
+      }
+    }
+  ],
+
+  "motions": [
+    {
+      "start": 0,
+      "end": 300,
+      "motion": {
+        "type": "hover"
+      }
+    }
+  ]
+}
